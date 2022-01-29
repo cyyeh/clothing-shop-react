@@ -1,6 +1,6 @@
 import './collection-item.styles.scss'
 
-const CollectionItem = ({ id, name, price, imageUrl }) => (
+const CollectionItem = ({ name, price, imageUrl }) => (
   <div className='collection-item'>
     <div
       className='image'
