@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "6.0.2",
+    "firebase": "8.0.0",
     "lodash.memoize": "^4.1.2",
-    "node-sass": "7.0.1",
+    "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "7.0.3",
@@ -17,6 +17,7 @@
     "reselect": "^4.1.5"
   },
   "devDependencies": {
+    "netlify-cli": "^8.15.1",
     "react-scripts": "5.0.0"
   },
   "resolutions": {
@@ -26,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "netlify deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
