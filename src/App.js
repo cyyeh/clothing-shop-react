@@ -1,11 +1,10 @@
 import { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
-
 import { Switch, Route, Redirect } from 'react-router-dom'
 
-import './App.css'
 
+import { GlobalStyle } from './global.styles'
 import Header from './components/header/header.component'
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
@@ -45,6 +44,7 @@ const App = (props) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
